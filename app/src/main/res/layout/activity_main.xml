@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edit_quizzes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:hint="@string/in_percentage"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toStartOf="@+id/percent_1"
+        app:layout_constraintStart_toEndOf="@+id/quizzes_tag"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/quizzes_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/quizzes"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edit_quizzes"
+        app:layout_constraintEnd_toStartOf="@+id/edit_quizzes"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_mid_terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:hint="@string/in_percentage"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toStartOf="@+id/percent_3"
+        app:layout_constraintTop_toBottomOf="@+id/edit_hws"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/percent_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/percent"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edit_quizzes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edit_quizzes" />
+
+    <TextView
+        android:id="@+id/percent_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/percent"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edit_mid_terms"
+        app:layout_constraintEnd_toEndOf="@+id/percent_4"
+        app:layout_constraintStart_toStartOf="@+id/percent_4" />
+
+    <TextView
+        android:id="@+id/final_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/k_final"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edit_final"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/mid_terms_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/mid_t"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edit_mid_terms"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/hw_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/hws"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_hws"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="81dp"
+        android:text="@string/calculate"
+        app:layout_constraintBottom_toBottomOf="@+id/result_headline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/final_tag" />
+
+    <TextView
+        android:id="@+id/percent_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/percent"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edit_final"
+        app:layout_constraintEnd_toEndOf="@+id/percent_2"
+        app:layout_constraintStart_toStartOf="@+id/percent_2" />
+
+    <EditText
+        android:id="@+id/edit_hws"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:hint="@string/in_percentage"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toStartOf="@+id/percent_2"
+        app:layout_constraintTop_toBottomOf="@+id/edit_quizzes"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/edit_final"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:hint="@string/in_percentage"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toStartOf="@+id/percent_4"
+        app:layout_constraintTop_toBottomOf="@+id/edit_mid_terms"
+        tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/gpa_calculator"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/percent_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/percent"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edit_hws"
+        app:layout_constraintEnd_toEndOf="@+id/percent_1"
+        app:layout_constraintStart_toStartOf="@+id/percent_1" />
+
+    <TextView
+        android:id="@+id/result_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="6dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/result_is_based_on_global_standards_this_may_be_different_than_your_district_s_calculations"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/result_rounded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result_headline" />
+
+    <TextView
+        android:id="@+id/result_headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginBottom="176dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/my_gpa"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_final" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="44dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/result_subtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculate_button" />
+
+    <TextView
+        android:id="@+id/result_decimal"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="70dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/n_a"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/result_rounded" />
+
+    <TextView
+        android:id="@+id/result_rounded"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="3dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/n_a"
+        android:textSize="34sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/result_decimal"
+        app:layout_constraintEnd_toStartOf="@+id/result_decimal"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

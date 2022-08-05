@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GPA Calculator</string>
+    <string name="n_a">N/A</string>
+    <string name="gpa_calculator">GPA Calculator</string>
+    <string name="in_percentage">In Percentage</string>
+    <string name="calculate">Calculate</string>
+    <string name="percent">%</string>
+    <string name="quizzes">Quizzes</string>
+    <string name="hws">HWs</string>
+    <string name="k_final">Final</string>
+    <string name="mid_t">Mid-T</string>
+    <string name="result_is_based_on_global_standards_this_may_be_different_than_your_district_s_calculations">Result is based on global standards. This may be different than your district\'s calculations.</string>
+    <string name="my_gpa">My GPA</string>
+</resources>
